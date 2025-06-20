@@ -15,7 +15,7 @@ A simple CRUD (Create, Read, Update, Delete) application built with Laravel 11, 
     - Update existing products
     - Delete products
     - Image upload functionality
-    
+
 - Bootstrap-based UI
 - Form validation
 - Flash messages for operations
@@ -28,42 +28,57 @@ A simple CRUD (Create, Read, Update, Delete) application built with Laravel 11, 
 - Bootstrap 5
 - HTML/CSS
 
+
 ## Installation
 
-1. Clone the repository
-        ```bash
-        git clone [your-repository-url]
-        ```
-2. Install dependencies
-        ```bash
-        composer install
-        ```
-3. Create and configure `.env` file
-        ```bash
-        cp .env.example .env
-        php artisan key:generate
-        ```
-4. Configure your database in `.env`
-        ```
-        DB_CONNECTION=mysql
-        DB_HOST=127.0.0.1
-        DB_PORT=3306
-        DB_DATABASE=laravel_11_crud
-        DB_USERNAME=root
-        DB_PASSWORD=root
-        ```
-5. Create storage link
-        ```bash
-        php artisan storage:link
-        ```
-6. Run migrations
-        ```bash
-        php artisan migrate
-        ```
-7. Start the server
-        ```bash
-        php artisan serve
-        ```
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ludensburger/laravel_crud_jspeleca21
+   cd https://github.com/Ludensburger/laravel_crud_jspeleca21
+
+
+2. **Install dependencies**
+
+   ```bash
+   composer install
+   ```
+
+3. **Create and configure `.env` file**
+
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. **Set up your database in `.env`**
+   Open the `.env` file and update the database configuration:
+
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=laravel_11_crud
+   DB_USERNAME=root
+   DB_PASSWORD=root
+   ```
+
+5. **Create a symbolic link to storage**
+
+   ```bash
+   php artisan storage:link
+   ```
+
+6. **Run database migrations**
+
+   ```bash
+   php artisan migrate
+   ```
+
+7. **Start the development server**
+
+   ```bash
+   php artisan serve
+   ```
 
 ## Usage
 
@@ -91,5 +106,5 @@ This project was created as a lab activity for Laravel basics, demonstrating:
 
 ## Credits
 
-Created by: Ryu R. Mendoza  
-School: University of San Jose - Recoletos
+**Created by:** Ryu R. Mendoza  
+**School:** University of San Jose - Recoletos
