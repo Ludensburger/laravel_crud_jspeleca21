@@ -107,4 +107,4 @@ This project was created as a lab activity for Laravel basics, demonstrating:
 ## Credits
 
 **Created by:** Ryu R. Mendoza  
-**School:** University of San Jose - Recoletos
+
