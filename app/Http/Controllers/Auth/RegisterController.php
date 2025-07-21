@@ -31,8 +31,10 @@ class RegisterController extends Controller
                 'password' => Hash::make($validatedData['password']),
             ]);
 
-            Auth::login($user);
-            return redirect()->route('products.index');
+            // Auth::login($user);
+            return redirect()->route('login')
+                ->with('username', $validatedData['username'])
+                ->with('success', 'Registration successful! Please login.');
         } catch (\Exception $e) {
             return back()->withErrors(['error' => 'Registration failed: ' . $e->getMessage()])->withInput();
         }

@@ -12,7 +12,7 @@
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control @error('username') is-invalid @enderror"
-                                id="username" name="username" value="{{ old('username') }}" required>
+                                id="username" name="username" value="{{ session('username') ?? old('username') }}" required>
                             @error('username')
                             <span class="invalid-feedback">{{ $message }}</span>
                             @enderror

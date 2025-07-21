@@ -55,8 +55,9 @@ All product data: {{ var_export($product->toArray(), true) }}
                         <p>Full URL: {{ asset('storage/' . $product->image) }}</p> -->
 
                         @if($product->image)
-                        <img src="{{ asset('storage/' . $product->image) }}"
-                            alt="Product Image"
+                        <img
+                            src="{{ asset('storage/' . $product->image) }}"
+                            alt="{{ $product->original_name ?? basename($product->image) }}"
                             class="img-thumbnail"
                             style="max-width: 100%; width: 350px; height: auto;">
                         @else
